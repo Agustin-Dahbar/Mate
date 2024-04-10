@@ -386,5 +386,85 @@ El resultado de la evaluación final (doble condición) da falso ya que para que
 
 
 
-<!-- LEYES LÓGICAS -->
-1 HORA DE VIDEO
+LEYES LÓGICAS 
+<!-- Son leyes para reducir código. En los casos que veremos la doble condición significará equivalente. Estas son: -->
+
+Idempotencia
+<!-- Esta ley elimina especificaciones rebundantes. Se utiliza en conjunción o disyunción. -->
+(p ∧ p) ↔ p
+(p ∨ p) ↔ p 
+<!-- p o p && p y p es lo mismo que un solo p por lo tanto utilizamos idempotencia para reducir código. -->
+
+Conmutativa
+<!-- Esta ley invierte el orden de las proposiciones. Se utiliza en conjunción o disyunción. -->
+p ∧ q ↔ q ∧ p
+p ∨ q ↔ q ∨ p
+
+
+Asociativa 
+<!-- Esta ley cambia el lugar de los parentesís, es decir modifica la separación en términos. Al usarla no debemos mezclar a los operadores, deben ser los mismos. Se  usa en conjunción o disyunción.  -->
+(p ∧ q) ∧ r ↔ p ∧ (q ∧ r)
+(p ∨ q) ∨ r ↔ p ∨ (q ∨ r)
+
+
+Distributiva
+<!-- Ejecutaremos la tradicional distributiva, debemos invertir los conectivos. El que estaba dentro del () ahora estará afuera. 
+Lo importante a recordar es que el conectivo principal y su proposición serán los que se repetirán en la expresión extensa, en la corta podemos identificarlos porque son los que están fuera del paréntesis. -->
+(p ∨ q) ∧ r ↔ (p ∧ r) ∨ (q ∧ r) <!--De la conjunción respecto a la disyunción-->   
+(p ∧ q) ∨ r ↔ (p ∨ r) ∧ (q ∨ r) <!--De la disyunción respecto a la conjunción-->
+
+
+Leyes de Morgan
+<!-- Estas leyes niegan disyunciones o conjunciones. Distribuyen la negación que esta fuera del paréntesis, además invierte el conectivo entre disyunción y conjunción como veremos en el ejemplo. Esto se debe al efecto que tiene la negación antes de los paréntesis.  -->
+~(p ∨ q) ↔ (~p ∧ ~q)
+~(p ∧ q) ↔ (~p ∨ ~q)
+
+
+Elemento neutro
+<!-- Simplificamos una conjunción o disyunción que incluyen valores booleanos, esto solo si coinciden con su conectivo correspondiente. 
+La conjunción (∧)(y) debe estar con V y la disyunción (V)(o) debe estar con F -->
+p ∧ (V) ↔ p
+p V (F) ↔ p 
+<!-- En estos casos eliminaremos el conectivo y el valor booleano, ya que son rebundantes. -->
+<!-- Un truco es recordar que no se podrán juntar las V en la misma posición, es decir 'V (V)' si pasa esto es parte de la siguiente ley que veremos. -->
+
+Elemento absorvente
+<!-- En esta ley simplificamos también conjunciones o disyunciones que incluyen valores booleanos pero con dos diferencias, reducimos al valor booleano en vez de a la proposición.
+Además la compatibilidad entre conectivos y valores booleanos es diferente, en este caso la conjunción (∧)(y) debe estar con F y la disyunción (V)(o) debe estar con V.-->
+p ∧ (F) ↔ (F)
+p V (V) ↔ (V)
+
+
+Complementación
+<!-- En esta ley podemos tener una proposición y su negación o una propoción y su negación. En cada caso tendrán un resultado diferente. 
+El conectivo conjunción(∧)(y) da false. 
+El de disyunción(V)(o) da true. -->
+p ∧ (~p) ↔ (F)
+p V (~p) ↔ (V)
+
+Subsunción
+<!-- En esta ley la letra fuera de los paréntesis debe estar también dentro, esa es la manera para diferenciarlo de asociativa y distributiva, además de por su equivalencia, que es la misma proposición repetida de la que estabamos hablando. También debe usar si o si conectivos de conjunción y disyunción.-->
+(p V q) ∧ p ↔ p
+(p ∧ q) V p ↔ p
+
+
+Equivalencia importante
+<!-- Es en la única ley que aparecerá el conectivo condicional y será el utilizado principalmente
+Hasta ahora solo habían sido conjunciones y disyunciones. -->
+(p → q) ↔ (~p V q)
+<!-- En esta ley vemos que tenemos una implicación entre dos proposiciones, esto equivaldrá a la disyunción (V) (o) entre la negación del antecedente (~p) y el consecuente (q) de la implicación anterior. -->
+<!-- Ya que es el único que tiene un entonces (conectivo condicional) lo resolveremos apenas lo veamos por ya tenerlo identificado. -->
+
+<img src="Leyes. png">
+
+<!-- Ejercicios -->
+
+
+
+
+
+
+
+
+LINK SIMULACRO COMPUTACION
+https://aulavirtual.instituto.ort.edu.ar/mod/quiz/view.php?id=95156
