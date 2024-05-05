@@ -47,7 +47,7 @@ Si hoy llueve, entonces voy al cine.
 <!-- Como vemos la diferencia entre ellas es que en las compuestas hay un conectivo que une dos proposiciones simples. Los conectivos son "O" y "Entonces"  -->
 
 En la siguiente imagen veremos como las proposiciones compuestas tienen dos variables y un conectivo lógico entre ellas. 
-<img src="SimplesCompuestas.png">
+<img src="Imgs/SimplesCompuestas.png">
 <!-- En la imagen vemos como en las compuestas hay dos letras que representan a las dos variables/proposiciones. 
 En la primer proposición compuesta no se ve bien donde se ubica el conector, en la segunda se ubica en la segunda proposición. Preguntar al profe o a chat si se puede ubicar el conector en cualquier variable/proposición o si debe ir en alguna específicamente.  -->
 Hoy voy al cine o al teatro.
@@ -63,8 +63,8 @@ Sirven para unir variables. Si la oración tiene un conectivo lógico separará 
 5. Implicación/Condicional                      →           Implica condición
 6. Doble Implicacion/Doble Condicional          ↔           Implica equidad o doble condición
 
-<img src="ConectivosLogicos.png">
-<img src="ConectivovsLogicos2.png"> <!--Falta la disyuncion exclusiva en este cuadro que es el mismo signo que la inclusiva pero con una plataforma debajo del signo. -->
+<img src="Imgs/ConectivosLogicos.png">
+<img src="Imgs/ConectivosLogicos2.png"> <!--Falta la disyuncion exclusiva en este cuadro que es el mismo signo que la inclusiva pero con una plataforma debajo del signo. -->
 
 <!-- Ejs de cada uno -->
 1. Negacion (no)
@@ -155,7 +155,7 @@ F
 
 <!-- IMÁGENES DE LAS TABLAS Y SU DESARROLLO: -->
 <!-- NEGACIÓN (NO): -->
-<img src="tablaNegacion.png"> <!-- 
+<img src="Imgs/tablaNegacion.png"> <!-- 
 P   ~P                        -->
 V   F
 F   V
@@ -164,8 +164,7 @@ F   V
 
 
 <!--CONJUNCIÓN (Y):  -->
-<img src="TablaConjuncion.png"><!--
-P  P∧Q  Q                      --> Se nos dan 2 proposiciones, es decir 4 valores de verdad en la tabla.
+<img src="Imgs/TablaConjuncion.png"><!--
 V   V   V
 V   F   F
 F   F   V  
@@ -181,7 +180,7 @@ p∧q = Estoy estudiando y estoy viendo la tele
 
 
 <!-- DISYUNCIÓN (O): -->
-<img src="TablaDisyuncion.png"><!--
+<img src="Imgs/TablaDisyuncion.png"><!--
 P   P∨Q   Q                                   --> Son 2 proposiciones por lo tanto 2 a la 2 = 4 valores booleanos en la tabla.
 V    V    V
 V    V    F
@@ -199,7 +198,7 @@ pVq = Ire a comer o al cine.
 
 
 <!-- CONDICIONAL (→):  -->
-<img src="TablaCondicional.png"><!--
+<img src="Imgs/TablaCondicional.png"><!--
 P   P→Q   Q                      -->
 V    V    V
 V    F    F
@@ -211,7 +210,7 @@ F    V    F
 
 
 <!-- DOBLE CONDICIONAL (↔): -->
-<img src="TablaDobleCondicional.png"><!--
+<img src="Imgs/TablaDobleCondicional.png"><!--
 P   P↔Q   Q                           -->
 V    V    V
 V    F    F
@@ -228,30 +227,24 @@ El signo de conjunción representa a la 'y', las otras dos formulas equivalen a 
 
 
 
-
-<!-- Tablas resumen -->
+<!-- Negacion (no) -->
+P   ~P
+F   V
+V   F
 <!-- Conjunción (Y) -->
-La conjunción solo será verdadero cuando se cumplan ambas proposiciones, equivalente al operador && (AND).
-<!--
-P  P∧Q  Q                                                                                                           --> 
+P  P∧Q  Q                                                                                                            
 V   V   V
 
 <!-- Disyunción (O) -->
-En la disyunción solo se dará false cuando ambas proposiciones sean false. Si una o ambas tienen valor true dará true.
-<!--
-P   P∨Q   Q                                                                                                     -->
+P   P∨Q   Q                                                                                                     
 F    F    F
 
 <!-- Condicional (entonces) -->
-La condicional solo es falsa cuando su antecedente es verdadero y su consecuente falso.
-<!--
-P   P→Q   Q                                                                                                                     -->
+P   P→Q   Q                                                                                                                    
 V    F     F
  
 <!-- Doble condicional(si y solo si, equivalentes) -->
-Será verdadero cuando ambas proposiciones simples tengan el mismo valor booleano. (Ambas F o ambas V).
-<!--
-P   P↔Q   Q     ||     P   P↔Q   Q                                                                                              -->
+P   P↔Q   Q     ||     P   P↔Q   Q                                                                                              
 V    V    V            F    V    F                                                                                                       
 
 FIN TABLAS
@@ -455,14 +448,107 @@ Hasta ahora solo habían sido conjunciones y disyunciones. -->
 <!-- En esta ley vemos que tenemos una implicación entre dos proposiciones, esto equivaldrá a la disyunción (V) (o) entre la negación del antecedente (~p) y el consecuente (q) de la implicación anterior. -->
 <!-- Ya que es el único que tiene un entonces (conectivo condicional) lo resolveremos apenas lo veamos por ya tenerlo identificado. -->
 
-<img src="Leyes. png">
+<img src="Imgs/Leyes.png">
 
-<!-- Ejercicios -->
+<!-- Ejercicios --> ↔ → ∧ ∨ ~
+1.  ~p ∧ (~q → p)           EQUIVALENCIA
+    ~p ∧ [~ (~q) ∨ p]       INVOLUCIÓN
+    ~p ∧ (q ∨ p)            DISTRIBUTIVA
+    (~p ∧ q) ∨ (~p ∧ p)     COMPLEMENTACIÓN
+    (~p ∧ q) ∨ F            ELEMENTO NEUTRO
+    ~p ∧ q                  
+    
+
+2.  (p → q) ∨ (q → r)       EQUIVALENCIA
+    (~p ∨ q) ∨ (~p ∨ r)     CONMUTATIVA Y ASOCIATIVA ?
+    (~p v r) ∨ ( ~q ∨ q)    COMPLEMENTACIÓN
+    (~p ∨ r) ∨ (V)          ELEMENTO ABSORVENTE
+        V
+
+    
+3. (p ∧ ~q) ∧ (p → ~r) ∧ (q ∨ r)        EQUIVALENCIA (2DO) CONMUTATIVA Y ASOCIATIVA?
+    (p ∧ r) ∧ (~p ∨ ~r) ∧ (q ∨ ~q)      CONMUTATIVA (1RO, 2DO) COMPLEMENTACIÓN(3RO)
+    (p ∧ ~ p) ∧ (r ∨ ~r) ∧ (V)          COMPLEMENTACIÓN (1RO, 2DO)
+       F    ∧   (V)   ∧   (V)
 
 
+4. (p → ~q) → p             EQUIVALENCIA (INTERNA)
+   (~p ∨ ~q) → p            EQUIVALENCIA (EXTERNA)
+   ~(~p ∨ ~q) ∨ p           INVOLUCIÓN
+   (p ∨ ~q) ∨ p             CONMUTATIVA
+   (p ∨ p) ∨ ~q             IDEMPOTENCIA
+   p ∨ ~q
 
 
+5.  (~p →q) ∧ ~p            EQUIVALENCIA
+    ~(~p ∨ q) ∧ ~p          INVOLUCIÓN USÉ O ES LEYES DE MORGAN?
+    (p ∨ q) ∧ ~p           
+    
+      CONMUTATIVA
+    (p ∨ ~p) ∧ q            COMPLEMENTACIÓN
+    ∨ ∧ q                   ELEMENTO NEUTRO
+    q
 
+
+6. (p ∧ ~q) → q             EQUIVALENCIA
+   ~(p ∧ ~q) ∨ q            DISTRIBUTIVA CON LA NEGACIÓN ?
+   (~p ∧ q) ∨ q             DISTRIBUTIVA 
+   (~p ∨ q) ∧ (q ∨ q)       IDEMPOTENCIA
+   (~p ∨ q) ∧ q             ASOCIATIVA
+   ~p ∨ (q ∧ q)             IDEMPOTENCIA
+   ~p ∨ q
+
+
+7.  (p q) p //MAL REHACER.              G
+    (p q) p
+    (p q) p
+    (p p) (q p)
+    p (q p)
+    (p q) (p p)
+    (p q) p
+
+
+8.  (p → q) ∧ [~(~p ∧ ~q)]              EQUIVALENCIA(1RO) INVOLUCIÓN(2DO)
+    (~p ∨ q) ∧ (p ∧~q)                  CONMUTATIVA
+    (~p ∨ p) ∧ (q∧~q)                   COMPLEMENTACIÓN X2
+    V   ∧    F
+
+
+9.  ~(p → q) ∧ (p ∨ q)              EQUIVALENCIA
+    ~(~p ∨ q) ∧ (p ∨ q)             LEYES DE MORGAN (USÉ) O ES INVOLUCIÓN?
+    (p ∨ ~q) ∧ (p ∨ q)              CONMUTATIVA
+    (p ∨ p) ∧ (~q ∨ q)              IDEMPOTENCIA && COMPLEMENTACIÓN
+    p    ∧   V                      ELEMENTO NEUTRO
+    p
+
+CREO EN AMBAS ES LEYES MORGAN PORQUE LA INVOLUCIÓN DEBE SER SIN LA INTROMISIÓN DE OTRA PROPOSICIÓN.
+
+10. (~p → q) ∨ (~p ∧ q)             EQUIVALENCIA
+    (~p ∨ q) ∨ (~p ∧ q)             INVOLUCIÓN
+    (p ∨ q) ∨ (~p ∧ q)              CONMUTATIVA    
+    (p ∨ ~p) ∨ (q ∧ q)              COMPLEMENTACIÓN (1RO) IDEMPOTENCIA (2DO)
+    (V) ∨  q                        ELEMENTO ABSORVENTE 
+        V
+
+
+11. (p → q) → (~p → q)              EQUIVALENCIA X2 (las dos internas)
+    (~p ∨ q) → ~(~p ∨ q)            INVOLUCIÓN
+    (~p ∨ q) → (p ∨ q)              EQUIVALENCIA (la externa)
+    ~(~p ∨ q) ∨ (p ∨ q)             INVOLUCIÓN
+    (p ∨ q) ∨ (p ∨ q)               CONMUTATIVA
+    (p ∨ p) ∨ (q ∨ q)               IDEMPOTENCIA X2
+       p ∨ q
+
+
+12. [(~p → q)∧ ~p] → p          Equivalencia x2
+    ~[~(~p ∨ q)∧ ~p] ∨ p        Conmutativa (q y ~p)
+    ~[~(~p ∨ ~p)∧ q] ∨ p        Leyes de Morgan
+    ~[(p ∨ p) ∧ q] ∨ p          Idmepotencia
+    ~[p ∧ q] ∨ p                Leyes de Morgan
+    [~p ∧ ~q] ∨ p               Conmutativa
+    [~p ∧ p] ∨ ~q               Complementación
+    F  ∨ ~q                     Elemento neutro
+        ~q
 
 
 

@@ -37,7 +37,7 @@ Esta será: el digito * su base elevado a la posición. Las multiplicaciones pue
 2 * 10 a la 1 == resultado.
 
 <!-- A esto se le llama aplicarle el teorema fundamental a un número.. Pero ahora queremos ver la definición expresada correctamente, la siguiente: -->
-<img src="TeoremaExpresado.png">
+<img src="Imgs/TeoremaExpresado.png">
 <!--
 Que es similar pero remplazando los digitos con una X acompañada del número de su posición en la esquina inferior derecha, y reemplazando también el número de la base por una B con el número de la posición como potencia 
 -->
@@ -252,30 +252,13 @@ Convertir a número decimal:
 1. 12,3 (4      )
 2. B9, 01(16    )
 3. 371,4(8      )
-4. 10100,001(2  )
+4. 10100,001(2  ) 
 5. 6,125(7      )
 6. 1111,11(2    )
 7. D,0C(16      )
 8. 44,2(8       )
 9. 64,1(9       )
 
-<!-- Resoluciones -->
-1. 12,3(4 == 
-1 * 4(1 + 2 * 4(0 + 3 * 4(-1 ==                                   ))))
-4 + 2 + 3 * 0,25 ==
-4 + 2 + 0,75 ==
-6,75
-
-Entonces 12,3(4 == 6,75(10                                        ))
-<!-- Cuando una potencia es negativa debemos invertir la fracción, es decir en este caso ese 4 representa a 4 enteros es decir 4/1 al invertirlo obtenemos 1/4 en vez de ser 4 partes entera es una cuarta parte. Inversión de valor. De positivo a negativo pero es la misma cantidad solo en el otro caso ahora entre positivo y negativo. 
-En el ejemplo anterior nos referimos a la inversión de la base elevada a -1, en el caso de la multiplicación del dígito decimal, que se encuentra en esa posición (-1). Por eso se convierte 4(-1 en 0,25 o un cuarto en fracción.  -->
-
-3. 371,4(8 ==                   )
-3 * 8(2 + 7 * 8(1 + 1 * 8(0 + 4 * 8(-1) ==                  )))
-192 + 56 + 1 + 4 * 0.125
-192 + 56 + 1 + 0.5 ==
-    249.5(10                                                )
-<!-- Entonces 371,4(8 equivale a 249,5(10 -->
-
+<!-- Resoluciones en carpeta -->
 
 <!-- FIN DE LA PRIMER CLASE. -->
