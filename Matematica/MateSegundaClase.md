@@ -482,9 +482,7 @@ Hasta ahora solo habían sido conjunciones y disyunciones. -->
 
 5.  (~p →q) ∧ ~p            EQUIVALENCIA
     ~(~p ∨ q) ∧ ~p          INVOLUCIÓN USÉ O ES LEYES DE MORGAN?
-    (p ∨ q) ∧ ~p           
-    
-      CONMUTATIVA
+    (p ∨ q) ∧ ~p            CONMUTATIVA
     (p ∨ ~p) ∧ q            COMPLEMENTACIÓN
     ∨ ∧ q                   ELEMENTO NEUTRO
     q
